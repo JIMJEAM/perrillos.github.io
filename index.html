@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Restaurant</title>
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <!-- Normalize V8.0.1 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- MDBootstrap V5 -->
+    <link rel="stylesheet" href="./css/mdb.min.css">
+
+    <!-- Font Awesome V5.15.1 -->
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!-- Sweet Alert V10.13.0 -->
+    <script src="./js/sweetalert2.js"></script>
+
+    <!-- General Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body id="main-body">
+
+    <!-- Header -->
+    <header class="header full-box bg-white">
+        <div class="header-brand full-box">
+            <a href="index.html">
+                <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+            </a>
+        </div>
+
+        <div class="header-options full-box">
+            <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()">
+                <ul class="list-unstyled full-box">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menú</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="tel:+529842361584">Telefono 984 236 1584</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+            <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Content -->
+    <div class="banner">
+        <div class="banner-body">
+            <h3 class="text-uppercase">Bienvenido a Perrillos</h3>
+            <p>Ven a disfrutar el verdadero placer de una birria con origen y sabor de Michoacán, acompañado de un buen cantarito, el mejor ambiente, lugar y servicio de Tláhuac.</p>
+            <a href="menu.html" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ir al menu</a>
+        </div>
+    </div>
+
+    <div class="container container-web-page">
+        <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Nuestros servicios</h3>
+        <br>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <p class="text-center"><i class="fas fa-shipping-fast fa-5x"></i></p>
+                <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Envíos a domicilio</h5>
+                <p class="text-center">Envío gratis · Pedido mínimo $100 MXN</p>
+                <p class="text-center">
+                    <p class="text-center">Acepta Efectivo · Tarjetas de crédito</p>
+                </p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <p class="text-center"><i class="fas fa-utensils fa-5x"></i></p>
+                <h5 class="text-center text-uppercase poppins-regular font-weight-bold">
+                    Mexicana · Brunch · Desayunos</h5>
+                <p class="text-center">🤔🕘 Horario y días de servicio 🕕🛎 .</br>
+                    <hr>🌞 Viernes: 09:00 a 16:00 Hrs. 🌞 Sábado: 09:00 a 19:00 Hrs. 🌞 Domingo: 09:00 a 19:00 Hrs.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <p class="text-center"><i class="fas fa-store-alt fa-5x"></i></p>
+                <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Reservaciones de local</h5>
+                <p class="text-center">Para quienes preguntan, aquí nuestra respuesta... 🏡🤤🤠🥳🌮🥩🍲🍻🍽 Perrillos ofrece sus servicios y apoyo. . Espacio, inmobiliario, equipo de trabajo. Pregunta lo que necesites y juntos lo llevamos acabo. Mándanos un texto y lo solucionamos.
+                    . Se renta la perrera!!!</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid container-web-page">
+        <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Nuestros platillos más populares</h3>
+        <div class="container-cards full-box mb-4">
+
+            <div class="card-product div-bordered bg-white shadow-2">
+                <figure class="card-product-img">
+                    <img class="img-fluid" src="./assets/platillos/quesarina.jpg" alt="nombre_platillo">
+                </figure>
+                <div class="card-product-body">
+                    <div class="card-product-content">
+                        <h5 class="text-center fw-bolder">Quesaharina</h5>
+                        <p class="card-product-price text-center fw-bolder">$40.00 MXN</p>
+                        <span class="full-box text-center text-muted" style="display: block;">Si te gusta la quesabirria, está te va a encantar ❤️</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card-product div-bordered bg-white shadow-2">
+                <figure class="card-product-img">
+                    <img class="img-fluid" src="./assets/platillos/perrillosfit.jpg" alt="nombre_platillo">
+                </figure>
+                <div class="card-product-body">
+                    <div class="card-product-content">
+                        <h5 class="text-center fw-bolder">Perrillos fit</h5>
+                        <p class="card-product-price text-center fw-bolder">$30.00 MXN</p>
+                        <span class="full-box text-center text-muted" style="display: block;">En stock</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card-product div-bordered bg-white shadow-2">
+                <figure class="card-product-img">
+                    <img class="img-fluid" src="./assets/platillos/plato-birria.jpg" alt="nombre_platillo">
+                </figure>
+                <div class="card-product-body">
+                    <div class="card-product-content">
+                        <h5 class="text-center fw-bolder">Plato de birria surtida</h5>
+                        <p class="card-product-price text-center fw-bolder">$80.00 MXN</p>
+                        <span class="full-box text-center text-muted" style="display: block;">PLATO COMPLETO O MEDIO
+                            CON CARNE DE BIRRIA AL 
+                            ESTÍLO MÍCHOACAN, BAÑADO
+                            EN NUESTRO CALDO ROJO
+                            (VARIEDAD DE CHILES Y
+                            ESPECIAS) CON EL TOQUE DEL 
+                            PARIENTE,
+                            CON CEBOLLA MORADA,
+                            LIMON Y UN POCO DE
+                            CILANTRO AL GUSTO.
+                            </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card-product div-bordered bg-white shadow-2">
+                <figure class="card-product-img">
+                    <img class="img-fluid" src="./assets/platillos/guajobirria.jpg" alt="nombre_platillo">
+                </figure>
+                <div class="card-product-body">
+                    <div class="card-product-content">
+                        <h5 class="text-center fw-bolder">Guajolobirria</h5>
+                        <p class="card-product-price text-center fw-bolder">$50.00 MXN</p>
+                        <span class="full-box text-center text-muted" style="display: block;">En stock</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <p class="text-center"><a href="menu.html" class="btn btn-primary"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Ir al menu</a></p>
+    </div>
+
+    <hr>
+
+    <div class="container container-web-page">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6">
+                <figure class="full-box">
+                    <img src="./assets/img/registration.png" alt="registration" class="img-fluid">
+                </figure>
+            </div>
+
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=529842361584&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el servicio%20a%20domicilio." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h5 class="font-weight-bold"><i class="far fa-copyright"></i> Perrillos 2022</h5>
+                            </li>
+                            <li> Todos los derechos reservados </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h5 class="font-weight-bold">CDMX</h5>
+                            </li>
+                            <li><i class="fas fa-map-marker-alt fa-fw"></i>San Rafael Atlixco 13400 Tlaltenco Tlahuac</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <ul class="list-unstyled">
+                            <li>
+                                <h5 class="font-weight-bold">Siguenos en:</h5>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/PerrillosBirriaMichoacana/" class="footer-link" target="_blank">
+                                    <i class="fab fa-facebook fa-fw"></i> Facebook
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://goo.gl/maps/P9Vt7VWwB8Wg8y7Y6" class="footer-link" target="_blank">
+                                    <i class="fas fa-map-marked-alt"></i> Como llegar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- MDBootstrap V5 -->
+        <script src="./js/mdb.min.js"></script>
+
+        <!-- General scripts -->
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
