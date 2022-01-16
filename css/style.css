@@ -65,7 +65,7 @@ html {
     }
 }
 
-Span {
+h4 {
     display: block;
     font-family: monospace;
     white-space: nowrap;
