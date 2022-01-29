@@ -204,6 +204,15 @@ h4 {
     color: var(--link-hover);
 }
 
+i>a {
+    color: var(--text-color);
+}
+
+i>a:hover {
+    text-decoration: none;
+    color: var(--link-hover);
+}
+
 .header-button {
     width: var(--header-height);
     padding: 0;
